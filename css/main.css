@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Segoe', Roboto, Oxygen, Ubuntu, Cantarell 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
@@ -7,37 +6,87 @@
     box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     background-color: #5994FF;
     height: 100vh;
     width: 100vw;
 }
-main{
+
+main {
     position: relative;
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
 }
-section#login{
+
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 250px;
-    height: 550px;
+    height: 620px;
     background-color: white;
-    transform: translate(-50%, -50%);  
-    overflow: hidden;  
+    transform: translate(-50%, -50%);
+    overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.440);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.440);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
-section#login > div#imagen{
-    background: #5994FF url(/img/pexels-olena.jpg) repeat;
-    background-size:cover;
-    background-position: left bottom;
+
+section#login>div#imagen {
+    display: block;
+    background: #5994FF url(/img/pexels-olena.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     height: 250px;
 }
-section#login > div#form h1{
+
+section#login>div#form h1 {
     text-align: center;
+    padding-bottom: 5px;
 }
-section#login > div#form{
+section#login>div#form p {
+    font-size: 14pt;
+    padding-bottom: 15px;
+}
+section#login>div#form label {
+    font-size: 14pt;
+    text-align: left;
+   
+}
+section#login>div#form input {
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px 5px 0px;
+}
+.btn{
+    text-align: center;
+    display: inline-block;
+    border: none;
+    font-size: 16pt;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 30px;
+    width: 100%;
+    height: 50px;
+    background-color: #04AA6D;
+    box-shadow: 0  9px #999
+}
+.btn:hover{
+    background-color: #3e8e41;
+}
+.btn:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translate(4px);
+}
+section#login>div#form {
+    display: block;
     padding: 12px;
 }
