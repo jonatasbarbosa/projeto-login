@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Segoe', Roboto, Oxygen, Ubuntu, Cantarell 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #5994FF;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 550px;
+    background-color: white;
+    transform: translate(-50%, -50%);  
+    overflow: hidden;  
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.440);
+}
+section#login > div#imagen{
+    background: #5994FF url(/img/pexels-olena.jpg) repeat;
+    background-size:cover;
+    background-position: left bottom;
+    height: 250px;
+}
+section#login > div#form h1{
+    text-align: center;
+}
+section#login > div#form{
+    padding: 12px;
+}
