@@ -39,7 +39,7 @@ section#login {
 
 section#login>div#imagen {
     display: block;
-    background: #5994FF url(.../img/pexels-olena.jpg) no-repeat;
+    background: #5994FF url(../img/pexels-olena.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
