@@ -8,6 +8,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-querry.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/all.min.js"></script>
 </head>
 
 <body>
@@ -20,12 +22,17 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar as configurações</p>
                 <form action="" method="post">
-                    <label>Usuário:*</label></br>
-                    <input /></br>
-                    <label>Senha:*</label></br>
-                    <input /></br>
+                    <div class="campo">
+                        <label for="ilogin">Usuário:*</label>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail"/></br>
+                    </div>
+                    <div class="campo">
+                        <label for="isenha">Senha:*</label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha"/>
+                    </div>                    
                     <div id="btnform">
-                    <button class="btn"> Entrar</button>
+                        <button class="btn"> Entrar</button>
                     </div>
                 </form>
             </div>

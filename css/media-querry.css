@@ -1,9 +1,12 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body{
+    body {
         background-image: linear-gradient(to top, #04AA6D, #5994FF);
     }
+
     section#login {
         width: 90vw;
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
     }
 
     section#login>div#imagen {
@@ -17,29 +20,47 @@
         width: 70%;
     }
 
+    section#login>div#form h1 {
+        font-size: 28pt;
+        padding-bottom: 20px;
+    }
+
+    section#login>div#form p {
+        font-size: 22pt;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    section#login>div#form label {
+        font-size: 24pt;
+        text-align: left;
+
+    }
+
+    section#login>div#form input {
+        font-size: 26pt;
+        height: 65px;
+    }
+
     .btn {
-        text-align: center;
-        display: inline-block;
-        border: none;
-        font-size: 16pt;
-        border-radius: 10px;
-        cursor: pointer;
-        margin-top: 10px;
-        padding: 30px;
+        font-size: 28pt;
+        margin-top: 55px;
         width: 100%;
-        height: 50px;
-        background-color: #04AA6D;
-        box-shadow: 0 9px #999
+        height: 90px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    body{
+    body {
         background-image: linear-gradient(to top, #04AA6D, #5994FF);
     }
+
     section#login {
         width: 950px;
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
     }
+
     section#login>div#imagen {
         float: left;
         width: 50%;
@@ -49,6 +70,35 @@
     section#login>div#form {
         float: right;
         width: 50%;
+    }
+
+    section#login>div#form h1 {
+        font-size: 28pt;
+        padding-bottom: 20px;
+    }
+
+    section#login>div#form p {
+        font-size: 22pt;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    section#login>div#form label {
+        font-size: 24pt;
+        text-align: left;
+
+    }
+
+    section#login>div#form input {
+        font-size: 26pt;
+        height: 65px;
+    }
+
+    .btn {
+        font-size: 28pt;
+        margin-top: 35px;
+        width: 100%;
+        height: 90px;
     }
 
 }
