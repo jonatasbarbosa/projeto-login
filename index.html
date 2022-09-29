@@ -21,19 +21,25 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar as configurações</p>
-                <form action="" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
                         <label for="ilogin">Usuário:*</label>
                         <i class="fa-solid fa-user"></i>
-                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail"/></br>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30"/>
+                       
                     </div>
                     <div class="campo">
                         <label for="isenha">Senha:*</label>
-                        <input type="password" name="senha" id="isenha" placeholder="sua senha"/>
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" minlength="8" maxlength="20"/>
+                        
                     </div>                    
                     <div id="btnform">
                         <button class="btn"> Entrar</button>
+                        <a href="esqueci.html">Esqueci a senha</a>
+                        <i class="fa-solid fa-envelope"></i>
                     </div>
+                    
                 </form>
             </div>
         </section>
