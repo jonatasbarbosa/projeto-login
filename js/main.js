@@ -1,8 +1,8 @@
-jQuery(function($){
-    $("#forme").on("submit",function(e){
-      e.preventDefault(); // impedir o evento submit
-  
-      // aqui entra o codigo ajax. pesquisar no google "jquery ajax" para mais detalhes
-  
-    });
-  });
+const form = document.getElementById('fome')
+const name = document.getElementById('ilogin')
+const pass = document.getElementById('isenha')
+
+form.addEventListener('submit', (e)=>{
+
+    e.preventDefault();
+})

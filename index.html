@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-querry.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -22,7 +20,7 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar as configurações</p>
-                <form id="forme" action="index.html" method="post" autocomplete="on">
+                <form id="forme"  autocomplete="on">
                     <div class="campo">
                         <label for="ilogin">Email:*</label>
                         <i class="fa-solid fa-user iconlong"></i>
@@ -36,7 +34,7 @@
                         
                     </div>                    
                     <div id="btnform">
-                        <button class="btn"> Entrar</button>
+                        <button type="submit" class="btn" onclick="calcular();return false"> Entrar</button>
                         <a href="esqueci.html">Esqueci a senha:</a>
                         <i class="fa-solid fa-envelope iconlong"></i>
                     </div>
@@ -45,6 +43,9 @@
             </div>
         </section>
     </main>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
